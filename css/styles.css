@@ -45,6 +45,7 @@ p {
 
   background-color: var(--white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #ececec;
 }
 
 .header-flex {
@@ -360,7 +361,7 @@ address {
   background-color: var(--white-color);
 }
 
-.works-list .title {
+.item-border .title {
   margin-bottom: 4px;
 
   color: var(--title-text-color);
