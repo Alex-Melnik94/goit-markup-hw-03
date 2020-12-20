@@ -30,10 +30,16 @@ p {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -44,8 +50,7 @@ p {
   display: flex;
 
   background-color: var(--white-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-flex {
@@ -140,8 +145,8 @@ p {
 }
 
 .hero.section {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -247,7 +252,6 @@ p {
 }
 
 .members .list-title {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -262,7 +266,6 @@ p {
 }
 
 .members-list .item {
-  padding-bottom: 30px;
   background-color: var(--white-color);
   text-align: center;
   border-radius: 0px 0px 4px 4px;
@@ -280,6 +283,11 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
+}
+
+.members-list .members-descr {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Футер */
@@ -318,6 +326,10 @@ address {
   color: var(--accent-color);
 }
 
+.contacts-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .filter {
   display: flex;
   justify-content: center;
@@ -336,8 +348,6 @@ address {
   outline: none;
   cursor: pointer;
 
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 
   color: var(--title-text-color);
@@ -352,6 +362,9 @@ address {
 .filter button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .works-list {
@@ -390,10 +403,6 @@ address {
   border-left: 1px solid #eeeeee;
   padding: 20px 24px 20px 24px;
   width: 370px;
-}
-
-.link img {
-  display: block;
 }
 
 .works-list .item {
